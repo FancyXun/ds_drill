@@ -1,7 +1,7 @@
 FROM ds_dev:0.14.4
 
 
-RUN apt-get install -y openssh-server && \
+RUN apt-get install -y openssh-server pdsh && \
 
 RUN echo 'root:root' | chpasswd
 
